@@ -28,6 +28,9 @@
 
 # 国内访问将 cnk3x/xunlei:latest 替换为 registry.cn-shenzhen.aliyuncs.com/cnk3x/xunlei:latest
 
+# docker pull cnk3x/xunlei
+
+
 # host网络，默认端口 2345
 docker run -d --name=xunlei --hostname=mynas --net=host -v /mnt/sdb1/xunlei:/xunlei/data -v /mnt/sdb1/downloads:/xunlei/downloads --restart=unless-stopped --privileged cnk3x/xunlei:latest
 
